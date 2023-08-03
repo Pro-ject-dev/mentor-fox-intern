@@ -106,7 +106,7 @@
     max-width: 100%;
     height: 730px;
     padding:40px;
-    background: linear-gradient(to bottom,rgb(255,240,247,255), rgb(255,240,247,255), rgb(255,240,247,255));
+    background: linear-gradient(to bottom,rgb(245,245,245,245),rgb(255,240,247,255));
    
   }
   

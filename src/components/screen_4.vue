@@ -49,9 +49,7 @@ export default{
   <div class="cont"><p>Creating something for your<br>own comfort is always a <br> special experience.</p>  <button onclick="">Customize Now</button></div>
  
 </div>
-<div class="y">
 
-</div>
 
 </template>
 
@@ -63,7 +61,7 @@ export default{
     justify-content: space-between;
     align-items: start;
     max-width: 100%;
-    height:170%;
+    height:150%;
     padding:25px;
     padding-top:12%;
     background-color: white;  
@@ -108,7 +106,7 @@ export default{
   left: 0;
   width: 100%;
   height:240px;
-  background-color: rgba(0, 0, 0, 0.8); /* Set the desired background color and opacity for the "glass" div */
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -141,8 +139,6 @@ button {
   margin: 0 auto;
 }
 
-.y{
-    height:700px;
-}
+
 
 </style>

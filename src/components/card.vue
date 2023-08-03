@@ -32,8 +32,8 @@
     border:1px solid grey;
     height:120px;
     width:470px;
-    border-bottom: 2px solid black;
-    border-right:2px solid black;
+    border-bottom: 3px solid black;
+    border-right:3px solid black;
     margin-bottom: 50px;
     }
 

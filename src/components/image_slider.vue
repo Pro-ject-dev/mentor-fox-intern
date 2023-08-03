@@ -72,7 +72,6 @@ img {
   position: absolute;
   top: 32%;
   left: 18%;
-  /* transform: translate(-50%, -50%); */
   text-align: center;
   padding: 10px;
   border-radius: 5px;

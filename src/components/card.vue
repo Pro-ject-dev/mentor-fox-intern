@@ -86,9 +86,9 @@
        margin-right: 20px;
     }
     .custom-icon{
-    color: #dcff2e; 
+      color:rgb(222, 214, 0);
+        margin: 2px 2px 8px;
         
-        margin: 5px;
     }
     
     }

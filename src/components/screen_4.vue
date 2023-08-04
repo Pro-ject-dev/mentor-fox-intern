@@ -21,22 +21,22 @@ export default{
 <card :icon="['fas', 'file-arrow-up']" heading="Upload your inspiration"
                   content="Upload your inspiration with us and define your needs like comport, materials & colors, etc., and get your quote range" />
         
-<card :icon="['fas', 'file-arrow-up']" heading="Customize your furniture"
+<card :icon="['fas', 'gear']" heading="Customize your furniture"
                   content="Upload your inspiration with us and define your needs like comport, materials & colors, etc., and get your quote range" />
 
-<card :icon="['fas', 'file-arrow-up']" heading="Get your Quote"
+<card  :icon="['fas', 'tag']"  heading="Get your Quote"
                   content="Upload your inspiration with us and define your needs like comport, materials & colors, etc., and get your quote range" />    
 
-<card :icon="['fas', 'file-arrow-up']" heading="Confirm only with 50% advance"
+<card  :icon="['fas', 'percent']" heading="Confirm only with 50% advance"
                   content="Upload your inspiration with us and define your needs like comport, materials & colors, etc., and get your quote range" />
 
-<card :icon="['fas', 'file-arrow-up']" heading="Track your furniture periodically"
+<card :icon="['fas', 'location-crosshairs']" heading="Track your furniture periodically"
                   content="Upload your inspiration with us and define your needs like comport, materials & colors, etc., and get your quote range" />
 
-<card :icon="['fas', 'file-arrow-up']" heading="Get Delivered"
+<card :icon="['fas', 'hand-holding-dollar']"  heading="Get Delivered"
                   content="Upload your inspiration with us and define your needs like comport, materials & colors, etc., and get your quote range" />
                          
-<card :icon="['fas', 'file-arrow-up']" heading="You stunned right? we see your happy face"
+<card :icon="['fas', 'face-smile']" heading="You stunned right? we see your happy face"
                   content="Upload your inspiration with us and define your needs like comport, materials & colors, etc., and get your quote range" />
 
 </div>
@@ -89,7 +89,7 @@ export default{
     color: grey;
 }
 .cards{
-  
+
     display:inline;
     padding-bottom: 30px;
     margin-bottom: 20px;

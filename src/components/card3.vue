@@ -24,7 +24,8 @@
   
 
 <style scoped>
-.header{
+
+  .header{
     font-family: 'Unbounded';
     color:white;
     font-size: 20px;
@@ -32,7 +33,7 @@
 }
 
 .content{
-    padding-top:5px;
+    padding-top:2px;
     padding-left: 10px;
     font-family: 'Open Sans';
     font-size: 14px;
@@ -47,4 +48,8 @@
 .para{
     padding: 10px;
 }
+
+
+
+
 </style>

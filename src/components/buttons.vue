@@ -34,6 +34,9 @@
   <style scoped>
   @import url("https://fonts.googleapis.com/css?family=Unbounded");
   
+  @media (min-width:901px) {
+    
+  
   button {
     background-color: transparent;
     font-family: 'Unbounded';
@@ -44,10 +47,10 @@
     margin-top: 10px;
     margin-right: 5px;
     margin-bottom: 12px;
-    padding-left: 44px;
+    padding-left: 5%;
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-right: 44px;
+    padding-right: 4%;
   }
   
   button.active {
@@ -56,5 +59,27 @@
     border-right: 3px  solid black;
    
   }
+}
+
+@media (max-width:900px) {
+  button {
+    width:30%;
+    margin-top:6px;
+    margin-right:10px;
+    height:35px;
+    background-color: transparent;
+    font-family: 'Unbounded';
+    font-size :10px;
+    display: inline;
+    border: 1px solid grey;
+  }
+  
+  button.active {
+    background-color: yellow;
+    border-bottom: 3px  solid black;
+    border-right: 3px  solid black;
+   
+  }
+}
   </style>
   

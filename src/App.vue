@@ -1,5 +1,4 @@
 <template>
-
     <appbar />
     <imge />
     <secondary/>
@@ -7,7 +6,7 @@
     <scrren4/>
     <screen5/>
     <screen6/>
-    <screen7/>
+    <screen7/> 
 <fotter/>
 </template>
 

@@ -51,7 +51,6 @@
     border: none;
     cursor: pointer;
     font-family: 'Unbounded';
-
     font-size: 12px;
     width: 120px;
     padding:5px;
@@ -64,7 +63,7 @@
   .custom-textfield {
     background-color: transparent;
     margin-top: 10px;
-  border:0px;
+    border:0px;
     font-size: 12px;
     width: 200px;
     caret-color: white;

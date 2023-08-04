@@ -1,152 +1,107 @@
 <template>
-    <div class="carousel-container">
-      <swiper :options="swiperOptions">
-        <swiper-slide v-for="(image, index) in images" :key="index">
-          <img :src="image" :alt="`Slide ${index + 1}`" />
-          <div class="contents">
-            <p class="c1">From Concept to creation, we bring</p>
-            <p class="c1">your furniture dreams to life</p>
-            <p class="c2">we specialize in creating unique, one-of-a-kind pieces tailored furniture</p>
-            <div class="btn">
-              <button>Customize Now</button>
-            </div>
-          </div>
-        </swiper-slide>
-      </swiper>
-      <div v-if="paginationEnabled" class="swiper-pagination"></div>
+  <div class="bg">
+    <div class="background-img">
+      <p class="c1">From Concept to creation, we bring your furniture dream to life</p>
+      <p class="c2">We specialize in creating unique, one-of-a-kind pieces tailored furniture</p>
+      <button>Customize Now</button>
+    </div>
     </div>
   </template>
   
   
   <script>
-  import 'swiper/css';
-  import 'swiper/css/bundle';
-  import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+
   
   export default {
     name: 'img',
-    components: {
-      Swiper,
-      SwiperSlide,
-    },
-    data() {
-      return {
-        images: [
-          'https://firebasestorage.googleapis.com/v0/b/angry-bird-b4b71.appspot.com/o/WhatsApp%20Image%202023-08-01%20at%209.32.32%20PM.jpeg?alt=media&token=84d3b0e7-c803-455c-ade1-68ee696dc90d',
-          'https://firebasestorage.googleapis.com/v0/b/mapview-aafa3.appspot.com/o/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg?alt=media&token=c44cae3c-e802-48ca-b674-58a723d3ae4d',
-          'https://firebasestorage.googleapis.com/v0/b/mapview-aafa3.appspot.com/o/medium-shot-girl-holding-painting.jpg?alt=media&token=68e74836-255f-4c2a-bf4c-7a08ed08dfd1',
-        ],
-        swiperOptions: {
-          loop: true,
-          pagination: {
-            el: '.swiper-pagination',
-          },
-          autoplay: {
-            delay: 3000, 
-          },
-        },
-      };
-    },
-    computed: {
-      paginationEnabled() {
-        return this.swiperOptions.pagination && this.swiperOptions.pagination.el;
-      },
-    },
   };
   </script>
   
   <style scoped>
 
-.carousel-container {
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
+.bg{
+  background-color:rgb(255, 0, 0);
+  min-width: 100%;
 }
 
-img {
-  width: 100%;
-  max-height: 570px;
+
+.background-img{
+background-image:url("https://firebasestorage.googleapis.com/v0/b/angry-bird-b4b71.appspot.com/o/WhatsApp%20Image%202023-08-01%20at%209.32.32%20PM.jpeg?alt=media&token=84d3b0e7-c803-455c-ade1-68ee696dc90d") ;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+width:100%;
+padding:20%;
 }
 
-.contents {
-  position: absolute;
-  top: 32%;
-  left: 18%;
+
+
+.c1{
+  font-weight: 600;
+  display: flex;
   text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-}
-
-.c1 {
-  font-size: 2.45rem;
-  font-weight: 700;
-  font-family: 'Unbounded'
-}
-
-.c2 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-top: 8px;
-}
-
-button {
-  height: 2.3rem;
-  width: 10rem;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: rgb(255, 247, 0);
-  font-size: 12px;
+  justify-content: center;
+  align-items: center;
   font-family: 'Unbounded';
-  font-weight: 800;
-  border: 0px;
-  display: block;
-  margin: 0 auto;
+  color:white;
+  font-size:31px;
 }
 
-.btn {
-  padding: 20px;
+.c2{
+  font-size:15px;
+  color:white;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  font-family: 'Open Sans';
+
 }
 
-@media screen and (max-width: 768px) {
-  img {
-    max-height: 400px;
-  }
-
-  .c1 {
-    font-size: 28px;
-  }
-
-  .c2 {
-    font-size: 14px;
-  }
-
-  button {
-    height: 2.3rem;
-    width: 20%;
-    font-size: 10px;
-  }
+button{
+font-weight: 600;
+padding:10px 30px ;
+background-color: yellow;
+border: 0px;
+font-size: 12px;
+font-family: 'Unbounded';
 }
 
-@media screen and (max-width: 480px) {
-  img {
-    max-height: 300px;
-  }
-
-  .c1 {
-    font-size: 24px;
-  }
-
-  .c2 {
-    font-size: 12px;
-  }
-  
-  button {
-    height: 2.3rem;
-    width: 70%; 
-    font-size: 12px; 
-  }
+@media screen and (max-width: 900px) {
+  .c1{
+  font-weight: 600;
+  display: flex;
+  text-align: start;
+  font-family: 'Unbounded';
+  color:white;
+  font-size:21px;
 }
-  
+.background-img{
+background-image:url("https://firebasestorage.googleapis.com/v0/b/angry-bird-b4b71.appspot.com/o/WhatsApp%20Image%202023-08-01%20at%209.32.32%20PM.jpeg?alt=media&token=84d3b0e7-c803-455c-ade1-68ee696dc90d") ;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: start;
+justify-content: start;
+display: flex;
+flex-direction: column;
+width:100%;
+padding:5%;
+padding-top: 38%;
+
+}
+.c2{
+  font-size:11px;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: 'Open Sans';
+
+}
+}
+
+
 </style>
 
 

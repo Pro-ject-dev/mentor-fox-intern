@@ -29,19 +29,21 @@ export default{
     justify-content: center;
     font-weight: w600;
     font-family: 'Unbounded';
-    font-size: 25px;
+    font-size: 20px;
     color:rgb(51, 0, 55);
 
 }
 .bg{
-    margin-top:30px;
-height:500px;
+margin-top:30px;
 padding:20px;
 }
 
 .cards{
+    max-width: 120%; 
+  overflow-x: auto; 
+  white-space: nowrap;
     display: flex;
-    padding:20px;
+    padding:10px;
 }
 
 

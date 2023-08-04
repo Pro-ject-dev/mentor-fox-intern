@@ -1,12 +1,12 @@
 <template>
-<div class="bg">
-<img src="https://firebasestorage.googleapis.com/v0/b/angry-bird-b4b71.appspot.com/o/jk.png?alt=media&token=d51567b6-d1ca-44a1-bd21-d04eeaed05ff">
-<p class="head">Here's how to choose the right sofa</p>
-<p class="para">Selecting a sofa is one of the most important furnishing decisions you can make! Think about it - so much of your home life centers around this one piece. Relaxing after wor...</p>
+<div class="bgb">
+<img :src="images">
+<p class="head">{{ header }}</p>
+<p class="para">{{ contents }}</p>
 <div class="horizontal-line"></div>
 
 <div class="foot">
-<p  class="date">16 jan,2023</p>
+<p  class="date">{{ date }}</p>
 
 <div class="read">
     <p>Read More</p>
@@ -19,7 +19,27 @@
 
 <script>
 export default{
-    name:'card2'
+    name:'card2',
+    props:{
+        header:{
+            type:String,
+            required:true
+
+        },
+    contents:{
+    type:String,
+    required:true
+},
+    images:{
+    type:String,
+    required:true
+},
+    date:{
+   type:String,
+   required:true 
+}
+    
+}
 }
 </script>
 
@@ -28,12 +48,12 @@ img{
     width: 300px;
     height:200px;
 }
-.bg{
+.bgb{
+  
 height:60%;
 margin:40px;
-    padding:2px;
+    padding:20px;
     border:1px solid black;
-    width: 320px;
     }
 .head{
     margin-top: 5px;
@@ -82,4 +102,7 @@ width:300px;
     justify-content:space-between;
     display: flex;
 }
+
+
+  
 </style>

@@ -27,11 +27,12 @@
 
 
 <style scoped>
+
+@media (min-width:901px) {
+  
 .card{
     padding:10px;
     border:1px solid grey;
-    height:120px;
-    width:470px;
     border-bottom: 3px solid black;
     border-right:3px solid black;
     margin-bottom: 50px;
@@ -45,13 +46,51 @@
     }
 
     .con-content{
+  width:400px;
+
         font-family: 'Open Sans';
         font-size: 10px;
-        color:grey
+        color:grey;
+       margin-right: 20px;
     }
     .custom-icon{
     color: #dcff2e; 
         
         margin: 5px;
-    }</style>
+    }
+    }
+
+
+
+    @media (max-width:900px) {
+  .card{
+    padding:10px;
+    border:1px solid grey;
+    border-bottom: 3px solid black;
+    border-right:3px solid black;
+    margin-bottom: 20px;
+    }
+
+    .heading{
+        font-family: 'Unbounded';
+        font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+    }
+
+    .con-content{
+       width:270px;
+        font-family: 'Open Sans';
+        font-size: 10px;
+        color:grey;
+       margin-right: 20px;
+    }
+    .custom-icon{
+    color: #dcff2e; 
+        
+        margin: 5px;
+    }
+    
+    }
+</style>
   

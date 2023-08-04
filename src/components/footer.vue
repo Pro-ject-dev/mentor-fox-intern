@@ -87,10 +87,11 @@
   </script>
   
   <style scoped>
+  
+@media (max-width:900px) {
   .bg {
-    height: 520px;
+    padding:25px;
     background-color: black;
-    width: 100%;
     align-items: center;
     justify-content: start;
     display: flex;
@@ -99,13 +100,108 @@
   
   .outline {
     padding-top: 30px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 90%;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
-    width: 95%;
+  }
+  
+  .first {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  
+  
+  .header {
+    font-family: 'Unbounded';
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    width:230px
+  }
+  
+  .components {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  .para {
+    padding-top: 13px;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 500;
+    color: grey;
+  }
+  
+  .con {
+    display: inline;
+    width: 28%;
+    margin-left: 20px;
+    margin-right: 10%;
+  }
+  
+  .cpy {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 12px;
+  }
+  
+  .foot-con {
+    margin: 5px 10px;
+    padding-bottom:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 130px;
+    padding-left: 20px;
+  }
+}
+@media (min-width:901px) {
+
+   .bg {
+    margin:0px;
+    padding:25px;
+    background-color: black;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outline {
+    padding-top: 30px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
   }
   
   .first {
@@ -172,8 +268,8 @@
   }
   
   .foot-con {
-    margin: 8px 20px;
-    width: 95%;
+    margin: 5px 10px;
+    padding-bottom:5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,5 +285,6 @@
     width: 130px;
     padding-left: 20px;
   }
+}
   </style>
   

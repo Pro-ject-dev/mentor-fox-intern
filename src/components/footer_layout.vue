@@ -10,6 +10,7 @@
   </template>
   
   <script>
+  
   export default {
     props: {
       imageSrc: String,
@@ -21,6 +22,10 @@
 
 
 <style scoped>
+
+
+
+
 img{
     height:35px;
     width:35px;

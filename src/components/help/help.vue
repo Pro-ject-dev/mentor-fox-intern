@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import card3 from './card2.vue'
+import card3 from '../help_card.vue'
 
 export default{
     name:'screen7',

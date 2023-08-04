@@ -1,5 +1,5 @@
 <script>
-import card from './card.vue'
+import card from '../feature_card.vue'
 
 export default{
     name:'screen4',

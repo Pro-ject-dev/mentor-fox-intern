@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import card1 from './card1.vue'
+import card1 from '../customers_card.vue'
 export default{
     name:'card2',
     components:{

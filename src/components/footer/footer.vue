@@ -48,9 +48,9 @@
   </template>
   
   <script>
-  import card3 from './card3.vue';
-  import widget from './footer_layout.vue';
-  import textfield from './textfield_footer.vue';
+  import card3 from '../footer_card.vue';
+  import widget from '../footer_widget.vue';
+  import textfield from '../textfield_footer.vue';
   
   export default {
     name: 'footer',

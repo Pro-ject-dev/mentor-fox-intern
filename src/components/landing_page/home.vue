@@ -20,7 +20,6 @@
   <style scoped>
 
 .bg{
-  background-color:rgb(255, 0, 0);
   min-width: 100%;
 }
 

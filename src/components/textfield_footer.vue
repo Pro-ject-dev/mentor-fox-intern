@@ -35,12 +35,17 @@
   </script>
   
   <style>
-  .button-with-textfield {
-    margin-right:30px ;
+
+  @media (min-width: 901px) {
+    
+  
+    .button-with-textfield {
+      margin-left: 60px;
+    margin-right:10px ;
     padding-left:10px;
-    display: inline-block;
+    display:inline-block;
     text-align: center  ;
-    justify-content: center;
+    justify-content: flex-end;
     border: 1px solid #ccc;
    
   }
@@ -74,5 +79,47 @@
   input:focus{
     outline: none;
   }
+}
+
+@media (max-width:900px) {
+  .button-with-textfield {
+    margin-top:12px;
+    padding-left:10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+   
+  }
+  
+  .custom-button {
+    background-color:rgb(255, 247, 0);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-family: 'Unbounded';
+    font-size: 5px;
+    padding:5px 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+
+  }
+  
+  .custom-textfield {
+    background-color: transparent;
+    margin-top: 10px;
+    border:0px;
+    font-size: 7px;
+    width: 190px;
+    caret-color: white;
+    font-family: 'Unbounded';
+    color:white
+  }
+
+  input:focus{
+    outline: none;
+  }
+}
   </style>
   

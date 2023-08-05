@@ -163,8 +163,8 @@ display: flex;
   
   img{
     padding-top:20px;
-    width:100%;
-    height:480px
+    width:98%;
+    height:410px
 
   }
 }

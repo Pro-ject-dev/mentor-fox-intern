@@ -44,6 +44,10 @@ p{
 .cards{
    
     display: flex;
+    max-width: 100%;
+  overflow-x: auto;
+   
+
 }
 }
 
@@ -68,8 +72,10 @@ p{
 .cards{
 
     display: flex;
-    max-width: 120%;
-  overflow-x: auto; 
+    max-width: 100%;
+  overflow-x: auto;
+ 
+
 
 }
 }  

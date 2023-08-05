@@ -13,9 +13,12 @@
               phoneNumber="samchris@gmail.com"
               imageSrc="https://firebasestorage.googleapis.com/v0/b/angry-bird-b4b71.appspot.com/o/opp.png?alt=media&token=250e639e-e484-46bc-af5b-bee30214460a"
             />
-          </div>
+          
           <textfield buttonText="Submit" initialValue="" />
         </div>
+        </div>
+      
+    
         <div class="horizontal-line"></div>
   
         <div class="components">
@@ -24,9 +27,11 @@
               <p class="header">Best Woods</p>
               <p class="para">Best Woods Furniture Specializes in crafting high-quality, custom furniture for a variety of clients including individuals, interior designers, and commercial properties.</p>
             </div>
+            
             <card3 :itemList="company" header="Company" />
             <card3 :itemList="Rooms" header="Rooms" />
             <card3 :itemList="links" header="Important Link" />
+          
           </div>
         </div>
         <div class="horizontal-line"></div>
@@ -44,7 +49,7 @@
           </div>
         </div>
       </div>
-    </div>
+   </div>
   </template>
   
   <script>
@@ -55,7 +60,7 @@
   export default {
     name: 'footer',
     components: {
-      card3,
+     card3,
       widget,
       textfield,
     },
@@ -72,7 +77,7 @@
           { id: 2, text: '-- Living Room' },
           { id: 3, text: '-- Study Room' },
           { id: 4, text: '-- Dining Room' },
-          { id: 4, text: '-- Store Room' },
+          { id: 4, text: '-- Store Room & etc...' },
         ],
         links: [
           { id: 1, text: '-- FAQ' },
@@ -98,26 +103,19 @@
     flex-direction: column;
   }
   
-  .outline {
-    padding-top: 30px;
-    border: 1px solid white;
+  .first {
+  padding-bottom:30px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
+    align-items:center;
   }
   
-  .first {
+  .row {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .row {
-    padding-left: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
   }
   
   
@@ -127,7 +125,7 @@
     font-size: 18px;
     font-weight: 500;
     color: white;
-    width:230px
+   
   }
   
   .components {
@@ -154,20 +152,19 @@
   }
   
   .con {
+    text-align: center;
     display: inline;
-    width: 28%;
-    margin-left: 20px;
-    margin-right: 10%;
+    width: 70%;
   }
   
   .cpy {
     font-family: 'Open Sans';
     color: white;
-    font-size: 12px;
+    font-size: 6px;
   }
   
   .foot-con {
-    margin: 5px 10px;
+    margin-top: 60px;
     padding-bottom:5px;
     display: flex;
     justify-content: space-between;
@@ -181,13 +178,12 @@
   }
   
   img {
-    width: 130px;
-    padding-left: 20px;
+    width: 50px;
+    padding-left: 5px;
   }
 }
 @media (min-width:901px) {
-
-   .bg {
+  .bg {
     margin:0px;
     padding:25px;
     background-color: black;
